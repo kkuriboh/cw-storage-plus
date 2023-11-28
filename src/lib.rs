@@ -28,6 +28,7 @@ mod keys;
 mod map;
 mod path;
 mod prefix;
+mod set;
 mod snapshot;
 
 #[cfg(feature = "iterator")]
@@ -53,6 +54,7 @@ pub use map::Map;
 pub use path::Path;
 #[cfg(feature = "iterator")]
 pub use prefix::{range_with_prefix, Prefix};
+pub use set::Set;
 #[cfg(feature = "iterator")]
 pub use snapshot::{SnapshotItem, SnapshotMap, Strategy};
 
